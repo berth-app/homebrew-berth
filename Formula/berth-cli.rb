@@ -1,8 +1,8 @@
 class BerthCli < Formula
   desc "CLI for Berth deployment control plane"
   homepage "https://getberth.dev"
-  url "https://github.com/berth-app/berth/releases/download/app-v0.4.1/berth-cli-darwin-universal.tar.gz"
-  sha256 "76c856b512fe7b6d061fdf313e697b6f55e8ecf76e031570321c5a820471bd94"
+  url "https://github.com/berth-app/berth/releases/download/app-v0.4.2/berth-cli-darwin-universal.tar.gz"
+  sha256 "568689bc12e08f02fe325c181fef724fd95c0e0024f95c8e6dea730700f62c2e"
 
   def install
     bin.install "berth-cli-darwin-universal" => "berth"
