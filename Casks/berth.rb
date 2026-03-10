@@ -11,8 +11,14 @@ cask "berth" do
 
   app "Berth.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-cr", "#{appdir}/Berth.app"],
+                   sudo: false
+  end
+
   zap trash: [
-    "~/Library/Application Support/com.berth.app",
+    "~/Library/Application Support/com.getberth.berth",
     "~/.berth",
   ]
 end
